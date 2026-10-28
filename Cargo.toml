@@ -1,0 +1,11 @@
+[package]
+name = "sigmaos-amber"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Contributors"]
+description = "SigmaOS amber component"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "sigmaos_amber"
+path = "src/lib.rs"
