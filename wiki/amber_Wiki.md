@@ -1,64 +1,50 @@
-# SigmaOS-amber Component Wiki
+# SigmaOS-SigmaOS-amber Component Wiki
 
 ## Overview
-SigmaOS-amber provides color theme support and visual styling for the SigmaOS operating system. It demonstrates the theming subsystem and color management within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic theme initialization.
+SigmaOS-SigmaOS-amber provides GitHub description is a placeholder; component scope remains unclassified. for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Theme Abstraction
-- Fail-Fast on Theme Initialization Errors
-- Deterministic Theme Setup
-- Clear Abstraction Over Theme APIs
-- Composition over Inheritance for theme extensions
+- SigmaOS-amber Abstraction
+- Fail-Fast on SigmaOS-amber Initialization Errors
+- Deterministic SigmaOS-amber Setup
+- Clear Abstraction Over SigmaOS-amber APIs
+- Composition over Inheritance for SigmaOS-amber extensions
 
 ## Architecture
-SigmaOS-amber follows a theme pattern:
-- **Theme Core**: Provides color theme management, visual styling, and theme application
-- **Color Management**: Supports color palettes, color schemes, and theme customization
-- **Theme Application**: Supports theme loading, theme switching, and theme persistence
-- **Error Handling**: Fail-fast on invalid theme configurations or unsupported theme types
+SigmaOS-SigmaOS-amber follows a SigmaOS-amber pattern:
+- **SigmaOS-amber Core**: Provides SigmaOS-amber support, SigmaOS-amber management, and SigmaOS-amber tracking
+- **Management**: Supports SigmaOS-amber management, SigmaOS-amber configuration, and SigmaOS-amber lifecycle
+- **Tracking**: Supports SigmaOS-amber status, SigmaOS-amber tracking, and SigmaOS-amber lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-amber configurations or unsupported SigmaOS-amber types
 
 ## API
 The component provides the following public APIs:
-- `theme::apply(name)` - Apply a color theme by given name
-- `theme::palette::colors()` - Get color palette and color scheme
-- `theme::switch::theme(theme)` - Switch to a different theme
-- `theme::status::active()` - Get current theme status and active theme
-- Error types for theme failure scenarios or unsupported theme types
+-  - Manage a SigmaOS-amber by given configuration
+-  - Register a SigmaOS-amber by given name
+-  - Get SigmaOS-amber status and SigmaOS-amber availability
+-  - Track SigmaOS-amber management and SigmaOS-amber tracking
+- Error types for SigmaOS-amber failure scenarios or unsupported SigmaOS-amber types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific theme configuration
-2. **Act**: Execute the code under test (theme application, theme switching)
-3. **Assert**: Verify the expected theme results
+1. **Arrange**: Set up test environment with specific SigmaOS-amber configuration
+2. **Act**: Execute the code under test (SigmaOS-amber init, SigmaOS-amber management)
+3. **Assert**: Verify the expected SigmaOS-amber results
 
 Example:
-```rust
-#[test]
-fn test_theme_apply_aaa() {
-    // Arrange
-    let theme_name = "dark";
-    
-    // Act
-    let result = theme::apply(theme_name);
-    
-    // Assert
-    assert!(result.is_ok());
-    let applied = result.unwrap();
-    assert!(applied.is_active());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Theme initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all theme failure scenarios
-- Unit tests provided for theme application and theme switching
-- Integration tests for full theming system with actual theme integration
+- Follows Rust best practices with 
+- SigmaOS-amber initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-amber failure scenarios
+- Unit tests provided for SigmaOS-amber management and configuration
+- Integration tests for full SigmaOS-amber system with actual SigmaOS-amber integration
 
 ## TODO
-- Add support for additional theme types (light, dark, high-contrast, custom)
-- Expand color palette capabilities (primary colors, accent colors, color schemes)
-- Add theme customization features (custom colors, theme inheritance, theme inheritance)
-- Create integration tests with actual theming systems and theme integration
-- Implement theme persistence and theme state management
+- Add support for additional SigmaOS-amber types
+- Expand SigmaOS-amber capabilities (SigmaOS-amber features, SigmaOS-amber configurations, SigmaOS-amber tracking)
+- Add lifecycle features (SigmaOS-amber tracking, SigmaOS-amber lifecycle, SigmaOS-amber propagation)
+- Create integration tests with actual SigmaOS-amber systems and SigmaOS-amber integration
+- Implement SigmaOS-amber persistence and SigmaOS-amber state management
